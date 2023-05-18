@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Pizza Instead",
+    "version": "1.0",
+    "description": "Replace a picture on the current page with pizza",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "assets/slice-of-pizza_1f355.png",
+        "32": "assets/slice-of-pizza_1f355.png",
+        "48": "assets/slice-of-pizza_1f355.png",
+        "128": "assets/slice-of-pizza_1f355.png"
+    }
+}
